@@ -1,0 +1,43 @@
+/* Shared look for the app pages: warm wood, cream text card, easy to read on a phone. */
+:root {
+  color-scheme: light dark;
+  --bg: #f6ecdc;
+  --card: #fffaf2;
+  --text: #2e1d10;
+  --muted: #6d5643;
+  --line: #e6d6bf;
+  --link: #9a5a12;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #2b1a10;
+    --card: #3a2618;
+    --text: #fbf3e8;
+    --muted: #d8c5b0;
+    --line: #4d3424;
+    --link: #ffd23f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 var(--font);
+}
+main {
+  max-width: 720px; margin: 0 auto; padding: 32px 16px 48px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+  padding: 24px 20px;
+}
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--link); }
+.muted { color: var(--muted); font-size: 15px; }
+.app { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
+.app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+footer { margin-top: 24px; text-align: center; color: var(--muted); font-size: 14px; }
