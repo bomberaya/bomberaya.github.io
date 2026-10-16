@@ -40,4 +40,10 @@ a { color: var(--link); }
 .muted { color: var(--muted); font-size: 15px; }
 .app { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
 .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+/* Official store badges. Google's image has padding built in, so it is drawn
+   taller to match the visible height of Apple's 40px badge. */
+.stores { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0 0 18px; }
+.stores a { display: block; line-height: 0; }
+.badge-play { height: 60px; margin: 0 -9px; }
+.badge-apple { height: 40px; }
 footer { margin-top: 24px; text-align: center; color: var(--muted); font-size: 14px; }
